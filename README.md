@@ -1,3 +1,12 @@
-#my first node-js-blog
+# Node JS Blog
 
-- using express and mongodb
+
+ - install node_modules:
+  ```
+  npm install
+  ```
+
+  - run with:
+ ```
+nodemon app.js
+```
