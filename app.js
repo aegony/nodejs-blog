@@ -29,6 +29,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 const validateCreatePostMiddleware = (req, res, next) => {
+  // !req.file.image doesnt work - throw error when image input is empty
   if (!req.file.image || !req.body.username || !req.body.title || !req.body.subtitle || !req.body.content) {
     // console.log()
     return res.redirect('/post/new')

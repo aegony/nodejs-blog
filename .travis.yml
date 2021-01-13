@@ -6,4 +6,4 @@ addons:
   homebrew:
     taps: homebrew/cask-versions
     update: true
-install: node install
+install: npm install
