@@ -30,8 +30,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const validateCreatePostMiddleware = (req, res, next) => {
   if (!req.file.image || !req.body.username || !req.body.title || !req.body.subtitle || !req.body.content) {
-    console.log()
-    // return res.redirect('/post/new')
+    // console.log()
+    return res.redirect('/post/new')
   }
   next()
 }

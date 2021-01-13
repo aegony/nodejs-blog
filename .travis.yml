@@ -1,1 +1,9 @@
-language: nodejs
+language: node_js
+node_js:
+  - 15.4.0
+os: osx
+addons:
+  homebrew:
+    taps: homebrew/cask-versions
+    update: true
+install: node install
