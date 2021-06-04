@@ -2,3 +2,5 @@ node_modules
 node-js-blog
 http.js
 .env
+.travis.yml
+test

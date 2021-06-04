@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const { config, engine } = require('express-edge')
 const mongoose = require('mongoose')
-const bodyParser = require('body-parser')
+const BodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 
 const Post = require('./database/models/Post')
@@ -25,8 +25,8 @@ app.use(express.static('public'))
 app.use(engine)
 app.set('views', `${__dirname}/views`)
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(BodyParser.json())
+app.use(BodyParser.urlencoded({ extended: true }))
 
 const validateCreatePostMiddleware = (req, res, next) => {
   // !req.file.image doesnt work - throw error when image input is empty
