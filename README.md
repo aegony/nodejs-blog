@@ -10,5 +10,5 @@
 
   - run with:
  ```
-nodemon app.js
+npm start
 ```
